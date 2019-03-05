@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<div class="Content-container Page FullWidth">
-  <main class="Main">
-    <h1>Error 404: Not Found</h1>
-    <?php get_template_part( 'template-parts/content-none' ); ?>
-  </main>
-</div>
+<main class="Main">
+  <section class="Main-container">
+    <h1><?php _e('Error 404: Not Found', 'kenai'); ?></h1>
+    <?php get_template_part( 'template-parts/not-found' ); ?>
+  </section>
+</main>
 <?php get_footer(); ?>

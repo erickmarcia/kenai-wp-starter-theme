@@ -1,8 +1,0 @@
-/* ********** Toggle Navigation ********** */
-.u-block { display: block; }
-
-.u-none { display: none; }
-
-@media screen and (min-width: 64em) {
-  .Menu-btn { display: none; }
-}

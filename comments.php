@@ -12,7 +12,6 @@
     <ol class="commentlist">
       <?php wp_list_comments(); ?>
     </ol>
-    <?php paginate_comments_links(); ?>
   <?php endif; ?>
   <?php comment_form(); ?>
 </aside>

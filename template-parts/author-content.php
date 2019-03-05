@@ -1,5 +1,8 @@
-<aside class="AuthorInfo">
-  <h3><?php _e('Información del Autor:', 'kenai'); ?></h3>
+<aside class="Author-info">
+  <div>
+    <h3><?php _e('Información del Autor:', 'kenai'); ?></h3>
+    <?php echo get_avatar( get_the_author_meta('ID'), 200 ); ?>
+  </div>
   <ul>
     <li>
       <?php _e('Usuario: ', 'kenai'); the_author(); ?>
@@ -26,16 +29,7 @@
       <?php _e('Descripción: ', 'kenai'); echo get_the_author_meta('description'); ?>
     </li>
     <li>
-      <?php _e('Facebook: ', 'kenai'); echo get_the_author_meta('facebook'); ?>
-    </li>
-    <li>
-      <?php _e('Twitter: ', 'kenai'); echo get_the_author_meta('twitter'); ?>
-    </li>
-    <li>
       <?php _e('Número de publicaciones: ', 'kenai'); echo get_the_author_posts(); ?>
-    </li>
-    <li>
-      <?php _e('Avatar: ', 'kenai'); echo get_avatar( get_the_author_meta('ID'), 500 ); ?>
     </li>
   </ul>
 </aside>

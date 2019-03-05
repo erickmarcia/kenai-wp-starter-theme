@@ -1,12 +1,10 @@
-<?php get_header(); ?>
 <main class="Main">
   <section class="Main-container">
     <?php
-      get_template_part('template-parts/author-content');
-      if( have_posts() ):
-        while( have_posts() ):
+      if ( have_posts() ):
+        while ( have_posts() ):
           the_post();
-          get_template_part('template-parts/search-content');
+          get_template_part('template-parts/home-content');
         endwhile;
         get_template_part('template-parts/pagination');
       else:
@@ -15,7 +13,3 @@
     ?>
   </section>
 </main>
-<?php
-get_sidebar();
-get_footer();
-?>

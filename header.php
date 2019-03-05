@@ -7,18 +7,13 @@
   <meta name="description" content="<?php kenai_custom_meta_description(); ?>">
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-    <?php
-      if ( is_home() || is_front_page() ):
-        get_header('custom');
-      endif;
-    ?>
-    <header class="Header">
-      <section class="Header-container">
-        <?php
-          get_header('logo');
-          get_header('menu');
-        ?>
-      </section>
-    </header>
-    <section class="Content">
+<body <?php body_class('hola'); ?>>
+  <?php get_template_part('template-parts/header-custom'); ?>
+  <header class="Header">
+    <section class="Header-container">
+      <?php
+        get_template_part('template-parts/header-logo');
+        get_template_part('template-parts/header-menu');
+      ?>
+    </section>
+  </header>
